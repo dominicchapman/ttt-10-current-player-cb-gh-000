@@ -3,9 +3,7 @@ def turn_count(board)
   board.each do |index|
     if index == "X" || index == "O"
       move_count += 1
-      return move_count
-    else
-      return move_count
     end
   end
+  move_count
 end
