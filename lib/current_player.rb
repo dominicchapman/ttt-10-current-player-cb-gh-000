@@ -11,6 +11,10 @@ end
 # first player assumed to be X, so odd moves
 def current_player(board)
 
-  turn_count(board) % 2 ? "O" : "X"
+  if turn_count(board) % 2
+    return "O"
+  else
+    return "X"
+  end
 
 end
