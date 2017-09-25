@@ -1,3 +1,4 @@
+# board = ["X", "O", "X", "O", "X", " ", " ", " ", " "]
 def turn_count(board)
   move_count = 0
   board.each do |index|
@@ -8,8 +9,8 @@ def turn_count(board)
   move_count
 end
 
-# first player assumed to be X, so odd moves
-# BUT => turn_count relates to 
+# first player assumed to be X, so odd moves i.e. 1, 3, 5, 7, 9
+# 
 def current_player(board)
 
   if turn_count(board) % 2
