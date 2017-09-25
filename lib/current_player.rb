@@ -9,12 +9,13 @@ def turn_count(board)
 end
 
 # first player assumed to be X, so odd moves
+# BUT => turn_count relates to 
 def current_player(board)
 
   if turn_count(board) % 2
-    return "O"
-  else
     return "X"
+  else
+    return "O"
   end
 
 end
