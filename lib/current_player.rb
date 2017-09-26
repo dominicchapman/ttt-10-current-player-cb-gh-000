@@ -15,6 +15,6 @@ end
 def current_player(board)
 
   # if_this_is_a_true_value ? then_the_result_is_this : else_it_is_this
-  turn_count(board) % 2 == 0 ? "O" : "X"
+  turn_count(board) % 2 == 0 ? "X" : "O"
 
 end
