@@ -10,7 +10,8 @@ def turn_count(board)
   move_count
 end
 
-# first player assumed to be X, so odd moves i.e. 1, 3, 5, 7, 9
+# we assume X plays first
+# if the turn count is an even number, the #current_player method should return "X", otherwise, it should return "O".
 def current_player(board)
 
   # if_this_is_a_true_value ? then_the_result_is_this : else_it_is_this
